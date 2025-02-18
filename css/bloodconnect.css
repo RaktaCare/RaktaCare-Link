@@ -1,0 +1,71 @@
+body {
+    font-family: serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 100px;
+    padding: 8px;
+    align-items: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    display: inline-table;
+    text-align-last: center;
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Make the list items flex items */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+.link-list li {
+    margin: 0 10px; /* Add spacing between items */
+}
+
+.link-button {
+    padding: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+    width: 200px; /* Set a fixed width */
+}
+
+.link-button:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .link-list {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: stretch; /* Make items fill the full width */
+    }
+
+    .link-list li {
+        margin: 10px 0; /* Adjust spacing for vertical layout */
+    }
+}
