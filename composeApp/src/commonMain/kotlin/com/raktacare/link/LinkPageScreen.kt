@@ -32,6 +32,7 @@ import androidx.compose.material.icons.filled.Facebook
 import androidx.compose.material.icons.filled.Forum
 import androidx.compose.material.icons.filled.Interests
 import androidx.compose.material.icons.filled.MonetizationOn
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.PlayCircle
 import androidx.compose.material.icons.filled.Storage
 import androidx.compose.material3.Button
@@ -101,6 +102,7 @@ fun LinkPageScreen() {
 
     val projectLinks = remember {
         listOf(
+            LinkData(Icons.Filled.PlayArrow, "Play Console", "https://play.google.com/console/u/0/developers/6118058232400780139/app-list"),
             LinkData(Icons.Default.Description, "Wiki", "https://innoveloper.atlassian.net/wiki/spaces"),
             LinkData(Icons.Default.Checklist, "Task", "https://innoveloper.atlassian.net/jira/software/projects/RC/summary"),
             LinkData(Icons.Default.Draw, "Figma", "https://www.figma.com/file/sO12Xs4ETrJc2QUkvLBhg6/RaktaCare"),
