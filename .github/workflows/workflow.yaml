@@ -54,7 +54,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
   clean:
-    needs: deploy
+    needs: build-and-deploy
     name: Clean up
     runs-on: ubuntu-latest
     steps:
